@@ -211,7 +211,7 @@ public class MachineManager : MonoSingleton<MachineManager>
     }
     private float _delta = 0; //扭角每帧delta值
     private float _curTwistAngle = 0; //当前扭角
-    private float _maxTwistAngle = 30; //最大扭角，达到这个最大扭角，工件就会断掉
+    private float _maxTwistAngle = 9; //最大扭角，达到这个最大扭角，工件就会断掉
     internal bool IsClockwise { get; set; } = false; //正转还是反转
     private Vector3 _axis = Vector3.right;
     private int _curIndex = 0;
