@@ -210,6 +210,10 @@ public class WMG_GUI_Functions : WMG_Text_Functions {
 	}
 	
 	public void changeSpritePositionTo(GameObject obj, Vector3 newPos) {
+        if(float.IsNaN(newPos.y))
+        {
+            return;
+        }
 		obj.transform.localPosition = new Vector3(newPos.x, newPos.y, newPos.z);
 	}
 	
