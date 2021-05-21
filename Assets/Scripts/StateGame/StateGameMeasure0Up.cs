@@ -61,7 +61,7 @@ public class StateGameMeasure0Up : GState
     private IEnumerator ShowHUDData()
     {
         MachineManager.Instance.ShowHideHUDData(strStick1, true);
-        MachineManager.Instance.SetHUDData(strStick1, $"9.6mm");
+        MachineManager.Instance.SetHUDData(strStick1, $"{Const.DiameterUp}mm");
         yield return new WaitForSeconds(Const.HUDDataWaitSeconds);
         MachineManager.Instance.ShowHideHUDData(strStick1, false);
         GStateMachineManager.Instance.ChangeState(FsmId, StateGame.Measure0Middle);

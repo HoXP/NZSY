@@ -30,7 +30,7 @@ public class StateGameMeasure90Down : GState
     private IEnumerator ShowHUDData()
     {
         MachineManager.Instance.ShowHideHUDData(strStick1, true);
-        MachineManager.Instance.SetHUDData(strStick1, $"10.4mm");
+        MachineManager.Instance.SetHUDData(strStick1, $"{Const.DiameterDown}mm");
         yield return new WaitForSeconds(Const.HUDDataWaitSeconds);
         MachineManager.Instance.ShowHideHUDData(strStick1, false);
         PlayFlayBack();
